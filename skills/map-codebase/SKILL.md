@@ -124,18 +124,18 @@ Where parallel subagents disagreed on segment assignments earlier, flag those co
 
 For each approved segment, generate these artifacts in order with a **STOP after each**:
 
-1. **Per-segment arrow doc** at `docs/arrows/{segment-name}.md` — References pointing to actual files, initial `status: MAPPED`. See [arrow-doc template](../../arrow-maintenance/references/arrow-doc-template.md). **STOP.**
-2. **Skeleton LLD** at `docs/llds/{segment-name}.md` — standard LLD template ([lld-templates](../../../linked-intent-dev/skills/linked-intent-dev/references/lld-templates.md)), no separate brownfield template. Content carries brownfield state: `[inferred]` markers in Decisions & Alternatives table, Open Questions for observed-but-unexplained behaviors. **STOP.**
+1. **Per-segment arrow doc** at `docs/arrows/{segment-name}.md` — References pointing to actual files, initial `status: MAPPED`. See [arrow-doc template](../arrow-maintenance/references/arrow-doc-template.md). **STOP.**
+2. **Skeleton LLD** at `docs/llds/{segment-name}.md` — standard LLD template ([lld-templates](../linked-intent-dev/references/lld-templates.md)), no separate brownfield template. Content carries brownfield state: `[inferred]` markers in Decisions & Alternatives table, Open Questions for observed-but-unexplained behaviors. **STOP.**
 3. **EARS spec file** at `docs/specs/{segment-name}-specs.md` — reserved spec-ID prefix (derived from segment name; ask the user for a namespacing segment if the prefix collides with an existing one). Initial status semantics:
    - `[x]` — behavior is observed as working in current code.
    - `[ ]` — behavior is specified but broken or partial in current code.
    - `[D]` — explicit non-wants (intentional non-features); rare in brownfield.
    **STOP.**
-4. **`index.yaml` entry** under `arrows:` with the taxonomy placement chosen during reconciliation. Follow the schema in [index-schema.md](../../arrow-maintenance/references/index-schema.md).
+4. **`index.yaml` entry** under `arrows:` with the taxonomy placement chosen during reconciliation. Follow the schema in [index-schema.md](../arrow-maintenance/references/index-schema.md).
 
 After all segments are generated, if no HLD exists:
 
-5. **Skeleton HLD** at `docs/high-level-design.md` — standard template ([hld-template](../../../linked-intent-dev/skills/linked-intent-dev/references/hld-template.md)), bodies marked `*(not yet specified)*` rather than filled with placeholder content. If an HLD already exists, skip this step — never modify an existing HLD. **STOP.**
+5. **Skeleton HLD** at `docs/high-level-design.md` — standard template ([hld-template](../linked-intent-dev/references/hld-template.md)), bodies marked `*(not yet specified)*` rather than filled with placeholder content. If an HLD already exists, skip this step — never modify an existing HLD. **STOP.**
 
 ## Phase 6 — Terminal Verification & Flesh-out Prompt
 
