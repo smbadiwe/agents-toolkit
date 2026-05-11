@@ -1,7 +1,7 @@
-------
+---
 name: dotnet
 description: Procedural rules and style conventions for working on C# codebases, .NET Core Web APIs, and testing suites. Trigger this skill when .cs, .csproj or .sln files are modified or analyzed.
-------
+---
 
 # .NET & C# Operational Skill
 
