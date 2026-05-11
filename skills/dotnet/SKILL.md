@@ -8,6 +8,11 @@ description: Procedural rules and style conventions for working on C# codebases,
 ## Activation Condition
 Execute these instructions if the codebase contains C# source files (`.cs`), project configurations (`.csproj`), or solution layout mappings (`.sln`). 
 
+## Coding Conventions
+
+1. Follow the official Microsoft C# coding guidelines for naming, formatting, and structuring code.
+2. Avoid over-abstracting simple operations or creating unnecessary layers of inheritance. For instance, avoid making interfaces and abstract classes for simple services that do not require multiple implementations or complex behavior.
+
 ## Compilation & Verification Execution
 
 After making code changes,
